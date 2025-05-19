@@ -1,0 +1,174 @@
+:root {
+    --cream: #ebecdd;
+    --orange: #d85e2f;
+    --teal: #a1cbcc;
+    --brown: #361f1c;
+    --text-dark: #2c2c2c;
+    --light-bg: #f4f5ed;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-dark);
+    background-color: var(--light-bg);
+  }
+  
+  header {
+    background-color: var(--cream);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .logo {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--orange);
+  }
+  
+  .logo span {
+    color: var(--brown);
+  }
+  
+  nav {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 500;
+  }
+  
+  .cta-button {
+    background-color: var(--orange);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  
+  .hero {
+    background-color: var(--teal);
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 2rem;
+  }
+  
+  .hero-text {
+    max-width: 500px;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    margin: 0 0 1rem;
+  }
+  
+  .hero p {
+    margin-bottom: 1.5rem;
+  }
+  
+  .hero img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 2rem;
+  }
+  
+  .section {
+    padding: 4rem 2rem;
+  }
+  
+  .about {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--cream);
+  }
+  
+  .about-text {
+    max-width: 500px;
+  }
+  
+  .services {
+    background-color: #ead7b2;
+    text-align: center;
+  }
+  
+  .services h2 {
+    margin-bottom: 2rem;
+  }
+  
+  .service-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .service {
+    max-width: 200px;
+  }
+  
+  footer {
+    background-color: var(--brown);
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  footer a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1rem;
+    font-size: 1.2rem;
+  }
+  
+  footer .logo span {
+    color: var(--cream);
+  }
+  
+  .socials {
+    display: flex;
+    align-items: center;
+  }
+  
+  @media (max-width: 768px) {
+    .hero,
+    .about {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    nav {
+      flex-direction: column;
+      gap: 0.5rem;
+      margin-top: 1rem;
+    }
+  
+    .service-list {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    footer {
+      flex-direction: column;
+      text-align: center;
+      gap: 1rem;
+    }
+  }
+
