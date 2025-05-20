@@ -2,32 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="keywords" content="design, branding, editorial, reportes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-        </style>
     <link rel="stylesheet" href="./css/styles.css">
-    <title>The Critters Group</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+    <title>The Critters Group - Contact</title>
+</head>
+
 <body>
+<header class="header">
+    <nav class="menu-container"> 
+    <img class="logo" src="./images/logo.png" alt="Logo Critters">
+     <ul class="menu">
+         <li class="menu__item active"> <a href="./index.html">Inicio</a></li>
+         <li class="menu__item"> <a href="#nosotros">Nosotros</a></li>
+         <li class="menu__item"> <a href="#servicios">Servicios</a></li>
+         <li class="menu__item"> <a href="#proyectos">Proyectos</a></li>
+         <li class="menu__item"> <a href="#contacto">Contacto</a></li>
+    </ul>
+</nav>
+</header>
 
-    <form action="https://formspree.io/f/xdkgllga" method="POST">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required>
-       
-        <label for="email">Correo electrónico:</label>
-        <input type="email" id="email" name="email" required>
-       
-        <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea>
-       
-        <button type="submit">Enviar</button>
-    </form>
-    
-</body>
-</html>
+<main>
 
-  <section id="seccion5">Contacto</section>
+<section id="seccion5" class="contacto"><h2>Contacto</h2>
     <form action="https://formspree.io/f/xdkgllga" method="POST">
         
         <p><label for="nombre">Nombre:</label>
@@ -39,6 +38,36 @@
         <p><label for="mensaje">Mensaje:</label>
         <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea></p>
        
-       <p> <button type="submit">Enviar</button></p>
+       <p> <button type="submit" class="cta-button">Enviar</button></p>
     </form>
-  
+  </section>
+      
+
+
+      
+
+
+
+
+</main>
+
+<footer class="footer">
+      <div>
+        <div class="logotxt">Critters <span style="color: var(--cream)">group</span></div>
+        <p>thecrittersgroup@gmail.com</p>
+      </div>
+
+
+      <div class="icons">
+        <i class="fa fa-behance"></i>
+        <i class="fa fa-linkedin"></i>
+        <i class="fa fa-whatsapp"></i>
+
+      </div>
+
+</footer>
+</body>
+</html>
+
+
+

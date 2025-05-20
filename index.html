@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
 </head>
     <title>The Critters Group</title>
 </head>
@@ -15,11 +16,11 @@
     <nav class="menu-container"> 
     <img class="logo" src="./images/logo.png" alt="Logo Critters">
      <ul class="menu">
-         <li class="menu__item active"> <a href="Inicio">Inicio</a></li>
+         <li class="menu__item active"> <a href="./index.html">Inicio</a></li>
          <li class="menu__item"> <a href="#nosotros">Nosotros</a></li>
          <li class="menu__item"> <a href="#servicios">Servicios</a></li>
          <li class="menu__item"> <a href="#proyectos">Proyectos</a></li>
-         <li class="menu__item"> <a href="#contacto">Contacto</a></li>
+         <li class="menu__item"> <a href="#formulario">Contacto</a></li>
     </ul>
 </nav>
 </header>
@@ -28,55 +29,62 @@
 
     <section class="hero">
       <div class="hero-text">
-        <h1>Creative minds,<br>wild ideas.</h1>
-        <p>We bring bold design to life.</p>
+        <h1>Creative minds, <br>wild ideas.</h1>
+        <p>Cada proyecto es único, por eso trabajamos codo a codo con nuestros clientes para encontrar soluciones visuales que se ajusten a sus necesidades, objetivos y personalidad de marca.
+Nos involucramos desde el primer momento: escuchamos, analizamos y proponemos. Nuestro enfoque es colaborativo, cercano y estratégico.</p>
         <button class="cta-button">Explore Our Work</button>
       </div>
-      <img src="https://i.imgur.com/5TJMyfz.png" alt="Laptop illustration" />
+      <img src="./images/1x/intro-8.png" alt="Imagen referencial" />
     </section>
       
     <section id="nosotros" class="about">
       <div class="about-text">
         <h2>Diseñamos ideas que conectan.</h2>
-         <p>Somos un equipo creativo especializado en diseño gráfico, editorial y packaging. Transformamos marcas en experiencias visuales sólidas y memorables. Nos apasiona crear identidades visuales con carácter, libros que invitan a ser leídos, newsletters que comunican de verdad y presentaciones que impactan.</p>
-         </div>
-      <img src="./images/3x/about@3x-8.png" alt="Laptop illustration" />
-    </section>
-
-    <section id="servicios" class="cards">
-        <h3>Creamos a tu medida.</h3>
-        <p>Cada proyecto es único, por eso trabajamos codo a codo con nuestros clientes para encontrar soluciones visuales que se ajusten a sus necesidades, objetivos y personalidad de marca.
-Nos involucramos desde el primer momento: escuchamos, analizamos y proponemos. Nuestro enfoque es colaborativo, cercano y estratégico.
-Ofrecemos un servicio integral que abarca:
+         <p>Somos un equipo creativo especializado en diseño gráfico, editorial y packaging. Transformamos marcas en experiencias visuales sólidas y memorables.
+Nos apasiona crear identidades visuales con carácter, libros que invitan a ser leídos, newsletters que comunican de verdad y presentaciones que impactan.
+Trabajamos en el desarrollo integral de piezas gráficas: desde la identidad de marca hasta el diseño y producción de packaging en offset y flexografía. También creamos reportes, materiales para comunicación interna y piezas POP que fortalecen la presencia de tu marca. 
 </p>
+         </div>
+                 
+     </section>
+
+    <section id="servicios">
+       <div class="servicios-cards">
+    <h3>SERVICIOS </h3> </div>
+      <div class="cards">
         <article class="card">
+          <img src="./images/1x/branding-8.png" alt="Branding">
             <h4>Branding</h4>
             <ul>
-                <li>Identidad corporativa</li>
-                <li>Comunicación interna</li>
-                <li>Desarrollo de marca</li>
-                <li>Material POP</li>
+                <li><i class="fi fi-rr-angle-small-right"></i>Identidad corporativa</li>
+                <li><i class="fi fi-rr-angle-small-right"></i>Comunicación interna</li>
+                <li><i class="fi fi-rr-angle-small-right"></i>Desarrollo de marca</li>
+                <li><i class="fi fi-rr-angle-small-right"></i>Material POP</li>
             </ul>
           <button class="skybutton">Cotizar</button>
         </article>
 
         <article class="card">
+          <img src="./images/1x/presentaciones-8.png" alt="Presentaciones">
             <h4>Presentaciones corporativas</h4>
             <ul>
-                <li>Reportes</li>
-                <li>Presentaciones</li>
-                <li>Informes</li>
+                <li><i class="fi fi-rr-angle-small-right"></i>Reportes</li>
+                <li><i class="fi fi-rr-angle-small-right"></i>Presentaciones</li>
+                <li><i class="fi fi-rr-angle-small-right"></i>Informes</li>
              </ul>
-             
+             <p>Pack 60 hs mensuales</p>
+
+             <button class="cta-button"><i class="fa-solid fa-cart-shopping"></i>Comprar</button>
              <button class="skybutton">Cotizar</button>
         </article>
 
             <article class="card">
+              <img src="./images/1x/editorial-8.png" alt="Editorial">
             <h4>Diseño editorial (impreso & digital)</h4>
             <ul>
-                <li>Catálogos impresos, digitales y enriquecidos.</li>
-                <li>Newsletters</li>
-                <li>Libros</li>
+                <li><i class="fi fi-rr-angle-small-right"></i>Catálogos impresos, digitales y enriquecidos.</li>
+                <li><i class="fi fi-rr-angle-small-right"></i>Newsletters</li>
+                <li><i class="fi fi-rr-angle-small-right"></i>Libros</li>
   
             </ul>
             
@@ -84,16 +92,18 @@ Ofrecemos un servicio integral que abarca:
         </article>
 
             <article class="card">
-            <img src="./images/logo.png" alt="">
+            <img src="./images/1x/packaging-8.png" alt="Editorial">
             <h4>Packaging</h4>
             <ul>
-                <li>Diseño de líneas de productos</li>
-                <li>Preprensa para offset y flexografía</li>
-                <li>Asesoramiento</li>
+                <li><i class="fi fi-rr-angle-small-right"></i>Diseño de líneas de productos</li>
+                <li><i class="fi fi-rr-angle-small-right"></i>Preprensa para offset y flexografía</li>
+                <li><i class="fi fi-rr-angle-small-right"></i>Asesoramiento</li>
             </ul>
             
             <button class="skybutton">Cotizar</button>
         </article>
+
+        </div>
   </section>
 
 <section id="Proyectos">
@@ -107,13 +117,7 @@ Ofrecemos un servicio integral que abarca:
 <div class="caja caja6"><img src="./images/proyecto6.jpg" alt="Girl in a jacket"><i class="fa fa-behance icono-overlay"></i></div>
 </div>
 
-
-
-
-
 </section>
-
-
 
 
 </main>
@@ -122,17 +126,54 @@ Ofrecemos un servicio integral que abarca:
       <div>
         <div class="logotxt">Critters <span style="color: var(--cream)">group</span></div>
         <p>thecrittersgroup@gmail.com</p>
-      </div>
-
-
-      <div class="icons">
+        <div class="icons">
         <i class="fa fa-behance"></i>
         <i class="fa fa-linkedin"></i>
         <i class="fa fa-whatsapp"></i>
-
       </div>
+      </div>
+  
+
+
+
+    <section id="formulario" class="contacto"><h2>Contacto</h2>
+    <form action="https://formspree.io/f/xdkgllga" method="POST">
+        
+        <p><label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required></p>
+       
+        <p><label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required></p>
+       
+        <p><label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea></p>
+       
+       <p> <button type="submit" class="cta-button">Enviar</button></p>
+    </form>
+  </section>
 
 </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>
 
