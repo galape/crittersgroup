@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/styles.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+   
 </head>
     <title>The Critters Group</title>
 </head>
@@ -15,6 +16,9 @@
 <header class="header">
     <nav class="menu-container"> 
     <img class="logo" src="./images/logo.png" alt="Logo Critters">
+
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+<label for="menu-toggle" class="hamburger">&#9776;</label>
      <ul class="menu">
          <li class="menu__item active"> <a href="./index.html">Inicio</a></li>
          <li class="menu__item"> <a href="#nosotros">Nosotros</a></li>
@@ -38,22 +42,39 @@ Nos involucramos desde el primer momento: escuchamos, analizamos y proponemos. N
     </section>
       
     <section id="nosotros" class="about">
-      <div class="about-text">
-        <h2>Diseñamos ideas que conectan.</h2>
+      <div class="texto">
+        <h2>¿Qué es Critters Group? </h2>
          <p>Somos un equipo creativo especializado en diseño gráfico, editorial y packaging. Transformamos marcas en experiencias visuales sólidas y memorables.
 Nos apasiona crear identidades visuales con carácter, libros que invitan a ser leídos, newsletters que comunican de verdad y presentaciones que impactan.
-Trabajamos en el desarrollo integral de piezas gráficas: desde la identidad de marca hasta el diseño y producción de packaging en offset y flexografía. También creamos reportes, materiales para comunicación interna y piezas POP que fortalecen la presencia de tu marca. 
-</p>
+Trabajamos en el desarrollo integral de piezas gráficas: desde la identidad de marca hasta el diseño y producción de packaging en offset y flexografía. También creamos reportes, materiales para comunicación interna y piezas POP que fortalecen la presencia de tu marca.</p>
          </div>
-                 
-     </section>
+</section>
+
+<div class="box">
+  <div class="item">
+    <img src="./images/logo.png" alt="Foto de Mariela Bruno">
+    <div class="text-content">
+      <h5>Mariela Bruno</h5>
+      <p>Diseñadora gráfica graduada en la UBA, con amplia experiencia en branding, diseño UI y ambientaciones. He trabajado con marcas líderes del sector retail, desarrollando soluciones visuales que combinan estética y funcionalidad. También cuento con sólida formación en preprensa flexográfica y offset</p>
+    </div>
+  </div>
+
+    <div class="item">
+    <img src="./images/logo.png" alt="Foto de Mariela Bruno">
+    <div class="text-content">
+      <h5>Gabriela Pérez</h5>
+      <p>Diseñadora gráfica graduada en la UBA, con amplia experiencia en branding, diseño UI y ambientaciones. He trabajado con marcas líderes del sector retail, desarrollando soluciones visuales que combinan estética y funcionalidad. También cuento con sólida formación en preprensa flexográfica y offset</p>
+    </div>
+  </div>
+</div>
+                
 
     <section id="servicios">
        <div class="servicios-cards">
     <h3>SERVICIOS </h3> </div>
       <div class="cards">
         <article class="card">
-          <img src="./images/1x/branding-8.png" alt="Branding">
+          <img src="./images/1x/idea-8.png" alt="Branding">
             <h4>Branding</h4>
             <ul>
                 <li><i class="fi fi-rr-angle-small-right"></i>Identidad corporativa</li>
@@ -61,45 +82,49 @@ Trabajamos en el desarrollo integral de piezas gráficas: desde la identidad de 
                 <li><i class="fi fi-rr-angle-small-right"></i>Desarrollo de marca</li>
                 <li><i class="fi fi-rr-angle-small-right"></i>Material POP</li>
             </ul>
+             <p>Pack 40 hs mensuales</p>
+
+             <button class="cta-button"><i class="bi bi-bag-fill"></i>Comprar</button>
           <button class="skybutton">Cotizar</button>
         </article>
 
         <article class="card">
-          <img src="./images/1x/presentaciones-8.png" alt="Presentaciones">
-            <h4>Presentaciones corporativas</h4>
+          <img src="./images/1x/printscreen-8.png" alt="Presentaciones">
+            <h4>Presentaciones</h4>
             <ul>
                 <li><i class="fi fi-rr-angle-small-right"></i>Reportes</li>
                 <li><i class="fi fi-rr-angle-small-right"></i>Presentaciones</li>
                 <li><i class="fi fi-rr-angle-small-right"></i>Informes</li>
-             </ul>
+            </ul>
              <p>Pack 60 hs mensuales</p>
-
-             <button class="cta-button"><i class="fa-solid fa-cart-shopping"></i>Comprar</button>
+             <button class="cta-button"><i class="bi bi-bag-fill"></i>Comprar</button>
              <button class="skybutton">Cotizar</button>
         </article>
 
             <article class="card">
-              <img src="./images/1x/editorial-8.png" alt="Editorial">
-            <h4>Diseño editorial (impreso & digital)</h4>
+              <img src="./images/1x/book-8.png" alt="Editorial">
+            <h4>Diseño editorial <br>(impreso & digital)</h4>
             <ul>
-                <li><i class="fi fi-rr-angle-small-right"></i>Catálogos impresos, digitales y enriquecidos.</li>
-                <li><i class="fi fi-rr-angle-small-right"></i>Newsletters</li>
-                <li><i class="fi fi-rr-angle-small-right"></i>Libros</li>
-  
-            </ul>
-            
+              <li><i class="fi fi-rr-angle-small-right"></i>Catálogos impresos, digitales y enriquecidos.</li>
+              <li><i class="fi fi-rr-angle-small-right"></i>Newsletters</li>
+              <li><i class="fi fi-rr-angle-small-right"></i>Libros</li>
+              </ul>
+            <p>Pack 20 hs mensuales</p>
+            <button class="cta-button"><i class="bi bi-bag-fill"></i>Comprar</button>
             <button class="skybutton">Cotizar</button>
         </article>
 
             <article class="card">
-            <img src="./images/1x/packaging-8.png" alt="Editorial">
+            <img src="./images/1x/corpo-8.png" alt="Editorial">
             <h4>Packaging</h4>
             <ul>
                 <li><i class="fi fi-rr-angle-small-right"></i>Diseño de líneas de productos</li>
                 <li><i class="fi fi-rr-angle-small-right"></i>Preprensa para offset y flexografía</li>
                 <li><i class="fi fi-rr-angle-small-right"></i>Asesoramiento</li>
             </ul>
-            
+                         <p>Pack 80 hs mensuales</p>
+
+             <button class="cta-button"><i class="bi bi-bag-fill"></i>Comprar</button>
             <button class="skybutton">Cotizar</button>
         </article>
 
@@ -123,56 +148,37 @@ Trabajamos en el desarrollo integral de piezas gráficas: desde la identidad de 
 </main>
 
 <footer class="footer">
-      <div>
-        <div class="logotxt">Critters <span style="color: var(--cream)">group</span></div>
-        <p>thecrittersgroup@gmail.com</p>
-        <div class="icons">
-        <i class="fa fa-behance"></i>
-        <i class="fa fa-linkedin"></i>
-        <i class="fa fa-whatsapp"></i>
-      </div>
-      </div>
-  
+  <div class="footer-info">
+    <div class="logotxt">Critters <span>group</span></div>
+    <p>thecrittersgroup@gmail.com</p>
+    <div class="icons">
+      <i class="fa fa-behance"></i>
+      <i class="fa fa-linkedin"></i>
+      <i class="fa fa-whatsapp"></i>
+    </div>
+  </div>
 
-
-
-    <section id="formulario" class="contacto"><h2>Contacto</h2>
+  <div class="footer-form">
+    <h2>Contacto</h2>
     <form action="https://formspree.io/f/xdkgllga" method="POST">
-        
-        <p><label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required></p>
-       
-        <p><label for="email">Correo electrónico:</label>
-        <input type="email" id="email" name="email" required></p>
-       
-        <p><label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea></p>
-       
-       <p> <button type="submit" class="cta-button">Enviar</button></p>
+      <p>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+      </p>
+      <p>
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+      </p>
+      <p>
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+      </p>
+      <p>
+        <button type="submit" class="cta-button">Enviar</button>
+      </p>
     </form>
-  </section>
-
+  </div>
 </footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 </body>
 </html>
