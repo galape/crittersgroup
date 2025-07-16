@@ -1,91 +1,283 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="keywords" content="design, branding, editorial, reportes">
+    <meta name="keywords" content="design, branding, editorial, reportes, portfolio, proyectos, trabajos">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
-   <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-      
-</head>
-    <title>The Critters Group</title>
+    <title>Portfolio de Proyectos - The Critters Group</title>
 </head>
 
-<body>
+<body class="proyectos-page">
 <header class="header">
     <nav class="menu-container"> 
-    <img class="logo" src="./images/logo.png" alt="Logo Critters">
+        <img class="logo" src="./images/logo.png" alt="Logo Critters">
 
-    <input type="checkbox" id="menu-toggle" class="menu-toggle">
-<label for="menu-toggle" class="hamburger">&#9776;</label>
-     <ul class="menu">
-         <li class="menu__item active"> <a href="./index.html">Inicio</a></li>
-         <li class="menu__item"> <a href="#nosotros">Nosotros</a></li>
-         <li class="menu__item"> <a href="#servicios">Servicios</a></li>
-         <li class="menu__item"> <a href="./proyectos.html">Proyectos</a></li>
-         <li class="menu__item"> <a href="#formulario">Contacto</a></li>
-         <li class="cta-button"><a href="carrito.html"> <i class="fa-solid fa-cart-shopping"></i> Carrito </a></li>
-    </ul>
-</nav>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="hamburger">&#9776;</label>
+        <ul class="menu">
+            <li class="menu__item"><a href="./index.html">Inicio</a></li>
+            <li class="menu__item"><a href="./index.html#nosotros">Nosotros</a></li>
+            <li class="menu__item"><a href="./index.html#servicios">Servicios</a></li>
+            <li class="menu__item active"><a href="./proyectos.html">Proyectos</a></li>
+            <li class="menu__item"><a href="#formulario">Contacto</a></li>
+            <li class="cta-button">
+                <a href="carrito.html">
+                    <i class="fa-solid fa-cart-shopping"></i> Carrito
+                    <span class="cart-count" id="cart-count">0</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
 </header>
 
 <main>
-<section>
-<div class="trabajos">
-<div class="trabajo trabajo1">
-  <a href="./poryecto1.html">
-    <img src="./images/proyecto1.jpg" alt="Girl in a jacket" />
-    <div class="hover-text">EDITORIAL</div>
-  </a>
-</div>
-<div class="trabajo trabajo2"><img src="./images/proyecto2.jpg" alt="Girl in a jacket"><div class="hover-text">PACKAGING</div></div>
-<div class="trabajo trabajo3"><img src="./images/proyecto3.jpg" alt="Girl in a jacket"><div class="hover-text">BRANDING</div></div>
-<div class="trabajo trabajo4"><img src="./images/proyecto4.jpg" alt="Girl in a jacket"><div class="hover-text">BRANDING</div></div>
-<div class="trabajo trabajo5"><img src="./images/proyecto5.jpg" alt="Girl in a jacket"><div class="hover-text">PRESENTACIONES</div></div>
-<div class="trabajo trabajo6"><img src="./images/proyecto6.jpg" alt="Girl in a jacket"><div class="hover-text">AMBIENTACIONES</div></div>
+    <!-- Hero de la página de proyectos -->
+    <section class="proyectos-hero">
+        <div class="proyectos-hero-container">
+            <div class="proyectos-hero-content">
+                <h1 class="proyectos-hero-title">Nuestro Portfolio</h1>
+                <p class="proyectos-hero-subtitle">
+                    Descubre nuestra colección de proyectos creativos que han transformado 
+                    marcas y conectado con audiencias de manera memorable.
+                </p>
+                <div class="proyectos-stats">
+                    <div class="stat-card">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Proyectos Completados</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">30+</span>
+                        <span class="stat-label">Clientes Satisfechos</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">Años de Experiencia</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-</div>
+    <!-- Filtros de categorías -->
+    <section class="proyectos-filtros">
+        <div class="container">
+            <div class="filtros-container">
+                <button class="filtro-btn active" data-categoria="todos">
+                    <i class="fas fa-th"></i>
+                    Todos los Proyectos
+                </button>
+                <button class="filtro-btn" data-categoria="branding">
+                    <i class="fas fa-palette"></i>
+                    Branding
+                </button>
+                <button class="filtro-btn" data-categoria="editorial">
+                    <i class="fas fa-book-open"></i>
+                    Editorial
+                </button>
+                <button class="filtro-btn" data-categoria="packaging">
+                    <i class="fas fa-box"></i>
+                    Packaging
+                </button>
+                <button class="filtro-btn" data-categoria="presentaciones">
+                    <i class="fas fa-presentation"></i>
+                    Presentaciones
+                </button>
+                <button class="filtro-btn" data-categoria="ambientaciones">
+                    <i class="fas fa-building"></i>
+                    Ambientaciones
+                </button>
+            </div>
+        </div>
+    </section>
 
+    <!-- Grid de proyectos -->
+    <section class="proyectos-grid-section">
+        <div class="container">
+            <div class="proyectos-grid" id="proyectos-grid">
+                <!-- Proyecto 1 - Editorial -->
+                <div class="proyecto-card" data-categoria="editorial">
+                    <div class="proyecto-imagen">
+                        <img src="./images/proyecto1.jpg" alt="Proyecto Editorial - Catálogo Corporativo" class="proyecto-img">
+                    </div>
+                    <div class="proyecto-info">
+                        <span class="proyecto-tag">Editorial</span>
+                        <h3>Catálogo Corporativo</h3>
+                        <p>Diseño editorial completo con fotografía profesional</p>
+                        <a href="./poryecto1.html" class="proyecto-btn">
+                            <i class="fas fa-eye"></i>
+                            Ver Proyecto
+                        </a>
+                    </div>
+                </div>
 
-</section>
+                <!-- Proyecto 2 - Packaging -->
+                <div class="proyecto-card" data-categoria="packaging">
+                    <div class="proyecto-imagen">
+                        <img src="./images/proyecto2.jpg" alt="Proyecto Packaging - Línea de Productos" class="proyecto-img">
+                    </div>
+                    <div class="proyecto-info">
+                        <span class="proyecto-tag">Packaging</span>
+                        <h3>Línea de Productos</h3>
+                        <p>Diseño de packaging para línea completa de productos</p>
+                        <a href="#" class="proyecto-btn">
+                            <i class="fas fa-eye"></i>
+                            Ver Proyecto
+                        </a>
+                    </div>
+                </div>
 
+                <!-- Proyecto 3 - Branding -->
+                <div class="proyecto-card" data-categoria="packaging">
+                    <div class="proyecto-imagen">
+                        <img src="./images/proyecto3.jpg" alt="Proyecto Packaging - Línea de Productos" class="proyecto-img">
+                    </div>
+                    <div class="proyecto-info">
+                        <span class="proyecto-tag">Packaging</span>
+                        <h3>Línea de Productos</h3>
+                        <p>Diseño de packaging para línea completa de productos</p>
+                        <a href="#" class="proyecto-btn">
+                            <i class="fas fa-eye"></i>
+                            Ver Proyecto
+                        </a>
+                    </div>
+                </div>
 
+                <!-- Proyecto 4 - Branding -->
+                <div class="proyecto-card" data-categoria="branding">
+                    <div class="proyecto-imagen">
+                        <img src="./images/proyecto4.jpg" alt="Proyecto Branding - Marca Personal" class="proyecto-img">
+                    </div>
+                    <div class="proyecto-info">
+                        <span class="proyecto-tag">Branding</span>
+                        <h3>Marca Personal</h3>
+                        <p>Desarrollo de identidad para profesional independiente</p>
+                        <a href="#" class="proyecto-btn">
+                            <i class="fas fa-eye"></i>
+                            Ver Proyecto
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Proyecto 5 - Presentaciones -->
+                <div class="proyecto-card" data-categoria="presentaciones">
+                    <div class="proyecto-imagen">
+                        <img src="./images/proyecto5.jpg" alt="Proyecto Presentaciones - Reporte Anual" class="proyecto-img">
+                    </div>
+                    <div class="proyecto-info">
+                        <span class="proyecto-tag">Presentaciones</span>
+                        <h3>Reporte Anual</h3>
+                        <p>Presentación ejecutiva para reporte anual corporativo</p>
+                        <a href="#" class="proyecto-btn">
+                            <i class="fas fa-eye"></i>
+                            Ver Proyecto
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Proyecto 6 - Ambientaciones -->
+                <div class="proyecto-card" data-categoria="ambientaciones">
+                    <div class="proyecto-imagen">
+                        <img src="./images/proyecto6.jpg" alt="Proyecto Ambientaciones - Oficina Corporativa" class="proyecto-img">
+                    </div>
+                    <div class="proyecto-info">
+                        <span class="proyecto-tag">Ambientaciones</span>
+                        <h3>Oficina Corporativa</h3>
+                        <p>Branding ambiental para espacios de trabajo</p>
+                        <a href="#" class="proyecto-btn">
+                            <i class="fas fa-eye"></i>
+                            Ver Proyecto
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="proyectos-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>¿Te gustó nuestro trabajo?</h2>
+                <p>Estamos listos para crear algo increíble para tu marca</p>
+                <div class="cta-buttons">
+                    <a href="./index.html#servicios" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i>
+                        Ver Nuestros Servicios
+                    </a>
+                    <a href="#formulario" class="btn btn-outline">
+                        <i class="fas fa-envelope"></i>
+                        Contactar
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
 
 <footer class="footer" id="formulario">
-  <div class="footer-info">
-    <div class="logotxt">Critters <span>group</span></div>
-    <p>thecrittersgroup@gmail.com</p>
-    <div class="icons">
-<i class="fab fa-behance"></i>
-<i class="fab fa-linkedin"></i>
-<i class="fab fa-whatsapp"></i>
+    <div class="footer-info">
+        <div class="logotxt">Critters <span>group</span></div>
+        <p>thecrittersgroup@gmail.com</p>
+        <div class="icons">
+            <i class="fab fa-behance"></i>
+            <i class="fab fa-linkedin"></i>
+            <i class="fab fa-whatsapp"></i>
+        </div>
     </div>
-  </div>
 
-  <div class="footer-form">
-    <h2>Contacto</h2>
-    <form action="https://formspree.io/f/xdkgllga" method="POST">
-      <p>
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required>
-      </p>
-      <p>
-        <label for="email">Correo electrónico:</label>
-        <input type="email" id="email" name="email" required>
-      </p>
-      <p>
-        <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-      </p>
-      <p>
-        <button type="submit" class="cta-buttonbuy">Enviar</button>
-      </p>
-    </form>
-  </div>
+    <div class="footer-form">
+        <h2>Contacto</h2>
+        <form action="https://formspree.io/f/xdkgllga" method="POST">
+            <p>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </p>
+            <p>
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+            </p>
+            <p>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            </p>
+            <p>
+                <button type="submit" class="cta-buttonbuy">Enviar</button>
+            </p>
+        </form>
+    </div>
 </footer>
 
+<script src="./js/main.js"></script>
+<script>
+// Filtros de proyectos
+document.addEventListener('DOMContentLoaded', function() {
+    const filtroBtns = document.querySelectorAll('.filtro-btn');
+    const proyectoCards = document.querySelectorAll('.proyecto-card');
+
+    filtroBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            // Remover clase active de todos los botones
+            filtroBtns.forEach(b => b.classList.remove('active'));
+            // Agregar clase active al botón clickeado
+            this.classList.add('active');
+
+            const categoria = this.getAttribute('data-categoria');
+
+            proyectoCards.forEach(card => {
+                if (categoria === 'todos' || card.getAttribute('data-categoria') === categoria) {
+                    card.style.display = 'block';
+                    card.style.animation = 'fadeInUp 0.6s ease-out';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    });
+});
+</script>
 </body>
 </html>
 

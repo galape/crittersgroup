@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="keywords" content="design, branding, editorial, reportes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styles.css">
-   <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
    
 </head>
     <title>The Critters Group</title>
+    <script src="./js/main.js" defer></script>
 </head>
 
 <body>
@@ -25,122 +26,358 @@
          <li class="menu__item"> <a href="#servicios">Servicios</a></li>
          <li class="menu__item"> <a href="./proyectos.html">Proyectos</a></li>
          <li class="menu__item"> <a href="#formulario">Contacto</a></li>
-         <li class="cta-button"><a href="carrito.html"> <i class="fa-solid fa-cart-shopping"></i> Carrito </a></li>
+         <li class="cta-button"> 
+           <a href="carrito.html"> 
+             <i class="fa-solid fa-cart-shopping"></i> Carrito 
+             <span class="cart-count" id="cart-count">0</span>
+           </a>
+         </li>
     </ul>
 </nav>
 </header>
 
 <main>
 
-    <section class="hero">
-      <div class="hero-text">
-        <h1>Creative minds, <br>wild ideas.</h1>
-        <p>Cada proyecto es único, por eso trabajamos codo a codo con nuestros clientes para encontrar soluciones visuales que se ajusten a sus necesidades, objetivos y personalidad de marca.
-Nos involucramos desde el primer momento: escuchamos, analizamos y proponemos. Nuestro enfoque es colaborativo, cercano y estratégico.</p>
-        <button class="cta-buttonbuy">Explore Our Work</button>
+    <section class="hero-section">
+      <div class="hero-background">
+        <div class="hero-pattern"></div>
+        <div class="hero-gradient"></div>
       </div>
-      <img src="./images/1x/intro-8.png" alt="Imagen referencial" />
+      
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-text-content">
+            <div class="hero-badge">
+              <span>Creative Studio</span>
+            </div>
+            
+            <h1 class="hero-title">
+              <span class="hero-title-line">Creative minds,</span>
+              <span class="hero-title-line">wild ideas.</span>
+            </h1>
+            
+            <p class="hero-description">
+              Cada proyecto es único, por eso trabajamos codo a codo con nuestros clientes para encontrar 
+              soluciones visuales que se ajusten a sus necesidades, objetivos y personalidad de marca.
+            </p>
+            
+            <p class="hero-description">
+              Nos involucramos desde el primer momento: escuchamos, analizamos y proponemos. 
+              Nuestro enfoque es colaborativo, cercano y estratégico.
+            </p>
+            
+            <div class="hero-actions">
+              <button class="hero-cta-primary">
+                <span>Explore Our Work</span>
+                <i class="fas fa-arrow-right"></i>
+              </button>
+            </div>
+            
+            <div class="hero-stats">
+              <div class="stat-item">
+                <span class="stat-number">50+</span>
+                <span class="stat-label">Proyectos</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">100%</span>
+                <span class="stat-label">Satisfacción</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">5+</span>
+                <span class="stat-label">Años</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="hero-visual">
+            <div class="hero-image-container">
+              <img src="./images/1x/intro-8.png" alt="Critters Group Creative Work" class="hero-main-image">
+              <div class="hero-image-overlay"></div>
+              <div class="floating-elements">
+                <div class="floating-card floating-card-1">
+                  <i class="fas fa-palette"></i>
+                  <span>Branding</span>
+                </div>
+                <div class="floating-card floating-card-2">
+                  <i class="fas fa-book-open"></i>
+                  <span>Editorial</span>
+                </div>
+                <div class="floating-card floating-card-3">
+                  <i class="fas fa-box"></i>
+                  <span>Packaging</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="hero-scroll-indicator">
+        <div class="scroll-arrow">
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <span>Scroll para explorar</span>
+      </div>
     </section>
       
-    <section id="nosotros" class="about">
-      <div class="texto">
-        <h2>¿Qué es Critters Group? </h2>
-         <p>Somos un equipo creativo especializado en diseño gráfico, editorial y packaging. Transformamos marcas en experiencias visuales sólidas y memorables.
-Nos apasiona crear identidades visuales con carácter, libros que invitan a ser leídos, newsletters que comunican de verdad y presentaciones que impactan.
-Trabajamos en el desarrollo integral de piezas gráficas: desde la identidad de marca hasta el diseño y producción de packaging en offset y flexografía. También creamos reportes, materiales para comunicación interna y piezas POP que fortalecen la presencia de tu marca.</p>
-         </div>
+    <section id="nosotros" class="about-section">
+      <div class="about-container">
+        <div class="about-header">
+          <h2 class="about-title">¿Qué es Critters Group?</h2>
+          <div class="about-subtitle">Creative minds, wild ideas</div>
+        </div>
+        
+        <div class="about-content">
+          <div class="about-text">
+            <p class="about-description">
+              Somos un equipo creativo especializado en diseño gráfico, editorial y packaging. 
+              Transformamos marcas en experiencias visuales sólidas y memorables.
+            </p>
+            <p class="about-description">
+              Nos apasiona crear identidades visuales con carácter, libros que invitan a ser leídos, 
+              newsletters que comunican de verdad y presentaciones que impactan.
+            </p>
+            <p class="about-description">
+              Trabajamos en el desarrollo integral de piezas gráficas: desde la identidad de marca 
+              hasta el diseño y producción de packaging en offset y flexografía. También creamos 
+              reportes, materiales para comunicación interna y piezas POP que fortalecen la presencia de tu marca.
+            </p>
+          </div>
+          
+          <div class="about-image">
+            <img src="./images/1x/about-8.png" alt="Critters Group Team" class="about-img">
+            <div class="about-image-overlay"></div>
+          </div>
+        </div>
+
+        <div class="team-preview">
+          <h3 class="team-title">Nuestro Equipo</h3>
+          <div class="team-members-compact">
+            <div class="team-member-compact">
+              <div class="member-avatar">
+                <img src="./images/Marie Bruno.jpg" alt="Mariela Bruno">
+              </div>
+              <div class="member-details">
+                <h4>Mariela Bruno</h4>
+                <p>Diseñadora Gráfica Senior</p>
+                <div class="member-skills-compact">
+                  <span>Branding</span>
+                  <span>UI/UX</span>
+                  <span>Packaging</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="team-member-compact">
+              <div class="member-avatar">
+                <img src="./images/Gaby.jpg" alt="Gabriela Pérez">
+              </div>
+              <div class="member-details">
+                <h4>Gabriela Pérez</h4>
+                <p>Diseñadora Editorial</p>
+                <div class="member-skills-compact">
+                  <span>Editorial</span>
+                  <span>Branding</span>
+                  <span>Print</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="servicios" class="services-section">
+      <div class="services-container">
+        <div class="services-header">
+          <h2 class="services-title">Nuestros Servicios</h2>
+          <p class="services-subtitle">Soluciones creativas que transforman tu marca</p>
+        </div>
+        
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">
+              <img src="./images/1x/idea-8.png" alt="Branding" class="service-img">
+              <div class="service-icon-bg"></div>
+            </div>
+            <div class="service-content">
+              <h3 class="service-name">Branding</h3>
+              <p class="service-description">
+                Creamos identidades visuales sólidas y memorables que conectan con tu audiencia.
+              </p>
+              <ul class="service-features">
+                <li><i class="fas fa-check"></i>Identidad corporativa</li>
+                <li><i class="fas fa-check"></i>Comunicación interna</li>
+                <li><i class="fas fa-check"></i>Desarrollo de marca</li>
+                <li><i class="fas fa-check"></i>Material POP</li>
+              </ul>
+              <div class="service-pricing">
+                <span class="price-tag">Pack 40 hs mensuales</span>
+              </div>
+              <div class="service-actions">
+                <button class="service-cta service-cta-primary">
+                  <i class="fas fa-shopping-cart"></i>
+                  <span>Agregar al Carrito</span>
+                </button>
+                <button class="service-cta service-cta-secondary">
+                  <i class="fas fa-comments"></i>
+                  <span>Cotizar</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <img src="./images/1x/printscreen-8.png" alt="Presentaciones" class="service-img">
+              <div class="service-icon-bg"></div>
+            </div>
+            <div class="service-content">
+              <h3 class="service-name">Presentaciones</h3>
+              <p class="service-description">
+                Diseñamos presentaciones impactantes que comunican tu mensaje de manera efectiva.
+              </p>
+              <ul class="service-features">
+                <li><i class="fas fa-check"></i>Reportes</li>
+                <li><i class="fas fa-check"></i>Presentaciones</li>
+                <li><i class="fas fa-check"></i>Informes</li>
+              </ul>
+              <div class="service-pricing">
+                <span class="price-tag">Pack 60 hs mensuales</span>
+              </div>
+              <div class="service-actions">
+                <button class="service-cta service-cta-primary">
+                  <i class="fas fa-shopping-cart"></i>
+                  <span>Agregar al Carrito</span>
+                </button>
+                <button class="service-cta service-cta-secondary">
+                  <i class="fas fa-comments"></i>
+                  <span>Cotizar</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <img src="./images/1x/book-8.png" alt="Editorial" class="service-img">
+              <div class="service-icon-bg"></div>
+            </div>
+            <div class="service-content">
+              <h3 class="service-name">Diseño Editorial</h3>
+              <p class="service-description">
+                Creamos piezas editoriales que invitan a ser leídas y compartidas.
+              </p>
+              <ul class="service-features">
+                <li><i class="fas fa-check"></i>Catálogos impresos y digitales</li>
+                <li><i class="fas fa-check"></i>Newsletters</li>
+                <li><i class="fas fa-check"></i>Libros y publicaciones</li>
+              </ul>
+              <div class="service-pricing">
+                <span class="price-tag">Pack 20 hs mensuales</span>
+              </div>
+              <div class="service-actions">
+                <button class="service-cta service-cta-primary">
+                  <i class="fas fa-shopping-cart"></i>
+                  <span>Agregar al Carrito</span>
+                </button>
+                <button class="service-cta service-cta-secondary">
+                  <i class="fas fa-comments"></i>
+                  <span>Cotizar</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <img src="./images/1x/corpo-8.png" alt="Packaging" class="service-img">
+              <div class="service-icon-bg"></div>
+            </div>
+            <div class="service-content">
+              <h3 class="service-name">Packaging</h3>
+              <p class="service-description">
+                Diseñamos packaging que vende y protege tu producto en el punto de venta.
+              </p>
+              <ul class="service-features">
+                <li><i class="fas fa-check"></i>Diseño de líneas de productos</li>
+                <li><i class="fas fa-check"></i>Preprensa para offset y flexografía</li>
+                <li><i class="fas fa-check"></i>Asesoramiento técnico</li>
+              </ul>
+              <div class="service-pricing">
+                <span class="price-tag">Pack 80 hs mensuales</span>
+              </div>
+              <div class="service-actions">
+                <button class="service-cta service-cta-primary">
+                  <i class="fas fa-shopping-cart"></i>
+                  <span>Agregar al Carrito</span>
+                </button>
+                <button class="service-cta service-cta-secondary">
+                  <i class="fas fa-comments"></i>
+                  <span>Cotizar</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!--
+    <section id="servicios">
+ <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100 border-0">
+          <svg aria-label="Placeholder: Image cap" class="bd-placeholder-img card-img-top" height="180" preserveAspectRatio="xMidYMid slice" role="img" width="100%" xmlns="http://www.w3.org/2000/svg"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+          <div class="card-footer">
+            <small class="btn btn-primary">Last updated 3 mins ago</small>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 border-0">
+          <svg aria-label="Placeholder: Image cap" class="bd-placeholder-img card-img-top" height="180" preserveAspectRatio="xMidYMid slice" role="img" width="100%" xmlns="http://www.w3.org/2000/svg"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          </div>
+          <div class="card-footer">
+            <small class="btn btn-primary">Last updated 3 mins ago</small>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 border-0">
+          <svg aria-label="Placeholder: Image cap" class="bd-placeholder-img card-img-top" height="180" preserveAspectRatio="xMidYMid slice" role="img" width="100%" xmlns="http://www.w3.org/2000/svg"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          </div>
+          <div class="card-footer">
+            <small class="btn btn-primary">Last updated 3 mins ago</small>
+          </div>
+        </div>
+      </div>
+    </div>
 </section>
 
-<div class="box">
-  <div class="item">
-    <img src="./images/logo.png" alt="Foto de Mariela Bruno">
-    <div class="text-content">
-      <h5>Mariela Bruno</h5>
-      <p>Diseñadora gráfica graduada en la UBA, con amplia experiencia en branding, diseño UI y ambientaciones. He trabajado con marcas líderes del sector retail, desarrollando soluciones visuales que combinan estética y funcionalidad. También cuento con sólida formación en preprensa flexográfica y offset</p>
-    </div>
-  </div>
 
-    <div class="item">
-    <img src="./images/logo.png" alt="Foto de Mariela Bruno">
-    <div class="text-content">
-      <h5>Gabriela Pérez</h5>
-      <p>Diseñadora gráfica graduada en la UBA, con amplia experiencia en branding, diseño UI y ambientaciones. He trabajado con marcas líderes del sector retail, desarrollando soluciones visuales que combinan estética y funcionalidad. También cuento con sólida formación en preprensa flexográfica y offset</p>
-    </div>
-  </div>
-</div>
-                
+-->
 
-    <section id="servicios">
-       <div class="servicios-cards">
-    <h3>SERVICIOS </h3> </div>
-      <div class="cards">
-        <article class="card">
-          <img src="./images/1x/idea-8.png" alt="Branding">
-            <h4>Branding</h4>
-            <ul>
-                <li><i class="fi fi-rr-angle-small-right"></i>Identidad corporativa</li>
-                <li><i class="fi fi-rr-angle-small-right"></i>Comunicación interna</li>
-                <li><i class="fi fi-rr-angle-small-right"></i>Desarrollo de marca</li>
-                <li><i class="fi fi-rr-angle-small-right"></i>Material POP</li>
-            </ul>
-             <p>Pack 40 hs mensuales</p>
-
-             <button class="cta-buttonbuy"><i class="bi bi-bag-fill"></i>Comprar</button>
-          <button class="skybutton">Cotizar</button>
-        </article>
-
-        <article class="card">
-          <img src="./images/1x/printscreen-8.png" alt="Presentaciones">
-            <h4>Presentaciones</h4>
-            <ul>
-                <li><i class="fi fi-rr-angle-small-right"></i>Reportes</li>
-                <li><i class="fi fi-rr-angle-small-right"></i>Presentaciones</li>
-                <li><i class="fi fi-rr-angle-small-right"></i>Informes</li>
-            </ul>
-             <p>Pack 60 hs mensuales</p>
-             <button class="cta-buttonbuy"><i class="bi bi-bag-fill"></i>Comprar</button>
-             <button class="skybutton">Cotizar</button>
-        </article>
-
-            <article class="card">
-              <img src="./images/1x/book-8.png" alt="Editorial">
-            <h4>Diseño editorial <br>(impreso & digital)</h4>
-            <ul>
-              <li><i class="fi fi-rr-angle-small-right"></i>Catálogos impresos, digitales y enriquecidos.</li>
-              <li><i class="fi fi-rr-angle-small-right"></i>Newsletters</li>
-              <li><i class="fi fi-rr-angle-small-right"></i>Libros</li>
-              </ul>
-            <p>Pack 20 hs mensuales</p>
-            <button class="cta-buttonbuy"><i class="bi bi-bag-fill"></i>Comprar</button>
-            <button class="skybutton">Cotizar</button>
-        </article>
-
-            <article class="card">
-            <img src="./images/1x/corpo-8.png" alt="Editorial">
-            <h4>Packaging</h4>
-            <ul>
-                <li><i class="fi fi-rr-angle-small-right"></i>Diseño de líneas de productos</li>
-                <li><i class="fi fi-rr-angle-small-right"></i>Preprensa para offset y flexografía</li>
-                <li><i class="fi fi-rr-angle-small-right"></i>Asesoramiento</li>
-            </ul>
-                         <p>Pack 80 hs mensuales</p>
-
-             <button class="cta-buttonbuy"><i class="bi bi-bag-fill"></i>Comprar</button>
-            <button class="skybutton">Cotizar</button>
-        </article>
-
-        </div>
-  </section>
 
 <section id="Proyectos">
 
 <div class="galery">
-<div class="caja caja1"><img src="./images/proyecto1.jpg" alt="Girl in a jacket"> <i class="fa fa-behance icono-overlay"></i></div>
-<div class="caja caja2"><img src="./images/proyecto2.jpg" alt="Girl in a jacket"><i class="fa fa-behance icono-overlay"></i></div>
-<div class="caja caja3"><img src="./images/proyecto3.jpg" alt="Girl in a jacket"><i class="fa fa-behance icono-overlay"></i></div>
-<div class="caja caja4"><img src="./images/proyecto4.jpg" alt="Girl in a jacket"><i class="fa fa-behance icono-overlay"></i></div>
-<div class="caja caja5"><img src="./images/proyecto5.jpg" alt="Girl in a jacket"><i class="fa fa-behance icono-overlay"></i></div>
-<div class="caja caja6"><img src="./images/proyecto6.jpg" alt="Girl in a jacket"><i class="fa fa-behance icono-overlay"></i></div>
+<div class="caja caja1"><img src="./images/proyecto1.jpg" alt="Girl in a jacket"><i class="fab fa-behance icono-overlay"></i></div>
+<div class="caja caja2"><img src="./images/proyecto2.jpg" alt="Girl in a jacket"><i class="fab fa-behance icono-overlay"></i></div>
+<div class="caja caja3"><img src="./images/proyecto3.jpg" alt="Girl in a jacket"><i class="fab fa-behance icono-overlay"></i></div>
+<div class="caja caja4"><img src="./images/proyecto4.jpg" alt="Girl in a jacket"><i class="fab fa-behance icono-overlay"></i></div>
+<div class="caja caja5"><img src="./images/proyecto5.jpg" alt="Girl in a jacket"><i class="fab fa-behance icono-overlay"></i></div>
+<div class="caja caja6"><img src="./images/proyecto6.jpg" alt="Girl in a jacket"><i class="fab fa-behance icono-overlay"></i></div>
 </div>
 
 </section>
